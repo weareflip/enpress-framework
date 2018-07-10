@@ -1,5 +1,5 @@
 {
-  "name": "enpress/framework",
+  "name": "weareflip/framework",
   "description": "The Enpress framework.",
   "keywords": [
     "enpress",
@@ -10,9 +10,14 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Andris Trieb",
-      "email": "andris@darc.co",
-      "homepage": "http://developer.darc.co"
+      "name": "Keith",
+      "email": "jeffory@c0d.in",
+      "homepage": "http://c0d.in"
+    },
+    {
+      "name": "Joel",
+      "email": "joel@joelmale.com",
+      "homepage": "https://www.joelmale.com"
     }
   ],
   "require": {
