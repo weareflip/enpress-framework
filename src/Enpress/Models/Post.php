@@ -300,5 +300,14 @@ class Post extends WordpressModel
             ->where('post_parent', 0)
             ->firstOrFail();
     }
+    
+    public function latestRevision()
+	{
+		return $this->withoutGlobalScopes()
+		             ->type('revision')
+		             ->where('post_parent', $this->id)
+		             ->orderBy('post_modified', 'desc')
+		             ->first();
+	}
 
 }
