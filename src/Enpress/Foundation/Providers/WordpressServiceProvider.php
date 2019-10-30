@@ -53,7 +53,9 @@ class WordpressServiceProvider extends ServiceProvider {
         define('WP_AUTO_UPDATE_CORE', false);
 
         // Disable code editor in administration
-        define('DISALLOW_FILE_EDIT', true);
+        if (!defined('DISALLOW_FILE_EDIT')) {
+            define('DISALLOW_FILE_EDIT', true);
+        }
 
         // Disable theme handling
         if (!defined('WP_USE_THEMES')) {
